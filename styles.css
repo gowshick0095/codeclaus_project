@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, rgb(238, 91, 219), rgb(230, 62, 191));
+}
+
+/* Music Player Container */
+.music-player {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header */
+.music-player h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Control Buttons */
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    background: #0a8bed;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+/* Volume Slider */
+#volume {
+    width: 100%;
+    margin-top: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    height: 8px;
+    cursor: pointer;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+#volume::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+/* Playlist Section */
+.playlist {
+    margin-top: 20px;
+}
+
+#playlist-name {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#playlist-name:focus {
+    border-color: #f06;
+    outline: none;
+}
+
+#playlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#playlist li {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#playlist li:hover {
+    background: #e2e2e2;
+}
